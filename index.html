@@ -14,15 +14,16 @@
         }
         
         :root {
-            --primary: #2E8B57;
-            --primary-light: #3CB371;
-            --secondary: #4682B4;
-            --secondary-light: #87CEEB;
-            --accent: #20B2AA;
-            --text: #2F4F4F;
-            --light: #F0FFF0;
+            --primary: #556B2F;
+            --primary-light: #6B8E23;
+            --primary-dark: #3D4C1F;
+            --secondary: #8F9779;
+            --secondary-light: #A8B09D;
+            --accent: #B5C7A3;
+            --text: #2F3829;
+            --light: #F5F9F0;
             --white: #FFFFFF;
-            --shadow: rgba(46, 139, 87, 0.15);
+            --shadow: rgba(85, 107, 47, 0.15);
             --whatsapp: #25D366;
             --instagram: #E4405F;
             --etsy: #F16521;
@@ -31,7 +32,7 @@
         }
         
         body {
-            background: linear-gradient(135deg, #E6F7FF 0%, #F0FFF0 100%);
+            background: linear-gradient(135deg, #F5F9F0 0%, #E8F0E0 100%);
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
@@ -142,8 +143,9 @@
         
         .subtitle {
             font-size: 1.2rem;
-            color: var(--secondary);
+            color: var(--primary-dark);
             margin-bottom: 20px;
+            font-weight: 500;
         }
         
         .language-toggle {
@@ -299,7 +301,7 @@
         
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(46, 139, 87, 0.2);
+            box-shadow: 0 15px 35px rgba(85, 107, 47, 0.2);
         }
         
         .card:nth-child(1) { animation-delay: 0.2s; }
@@ -346,7 +348,7 @@
         .section:nth-child(5) { animation-delay: 1.4s; }
         
         h3 {
-            color: var(--secondary);
+            color: var(--primary-dark);
             margin-bottom: 12px;
             font-size: 1.3rem;
             display: flex;
@@ -406,12 +408,12 @@
         }
         
         .ingredient:hover {
-            background: var(--secondary-light);
+            background: var(--accent);
             transform: translateY(-3px);
         }
         
         .highlight {
-            background: linear-gradient(135deg, #E6F7FF, #F0FFF0);
+            background: linear-gradient(135deg, #F0F5E8, #E8F0E0);
             padding: 20px;
             border-radius: 15px;
             border-left: 5px solid var(--accent);
@@ -421,13 +423,13 @@
         
         /* Footer with Social Media Style */
         .footer {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
             border-radius: 20px;
             padding: 40px 30px;
             text-align: center;
             margin-top: 30px;
-            box-shadow: 0 10px 30px rgba(70, 130, 180, 0.3);
+            box-shadow: 0 10px 30px rgba(85, 107, 47, 0.3);
             animation: pulse 3s infinite;
         }
         
